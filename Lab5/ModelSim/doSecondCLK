@@ -1,0 +1,10 @@
+vsim -gui SecondCLK
+
+add wave *
+
+force FCLK 1, 0 20 -r 20
+force RESET 1 @ 0
+force RESET 0 @ 10
+
+
+run 1000000000

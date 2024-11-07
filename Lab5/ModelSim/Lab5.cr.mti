@@ -1,0 +1,57 @@
+{C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SecondCLK.v} {1 {vlog -work work -stats=none {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SecondCLK.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module SecondCLK
+
+Top level modules:
+	SecondCLK
+
+} {} {}} {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/comparator.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/comparator.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/counter.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/counter.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sevenSegDriver.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sevenSegDriver.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module SevSegDriver
+
+Top level modules:
+	SevSegDriver
+
+} {} {}} {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v} {1 {vlog -work work -stats=none {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module clock
+
+Top level modules:
+	clock
+
+} {} {}} {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sync.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sync.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module sync
+
+Top level modules:
+	sync
+
+} {} {}} {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SMHClock.v} {1 {vlog -work work -stats=none {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SMHClock.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module SMHClock
+
+Top level modules:
+	SMHClock
+
+} {} {}} {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/parser.sv} {1 {vlog -work work -sv -stats=none {C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/parser.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module parser
+
+Top level modules:
+	parser
+
+} {} {}}

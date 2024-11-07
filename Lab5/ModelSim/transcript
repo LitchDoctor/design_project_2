@@ -1,0 +1,73 @@
+vsim -gui work.comparator
+# vsim -gui work.comparator 
+# Start time: 15:56:08 on Nov 05,2024
+# Loading sv_std.std
+# Loading work.comparator
+do doclock
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/ModelSim/Lab5.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/ModelSim/Lab5.mpf).  File can not be renamed.
+# End time: 15:57:08 on Nov 05,2024, Elapsed time: 0:01:00
+# Errors: 2, Warnings: 2
+# vsim -gui clock 
+# Start time: 15:57:08 on Nov 05,2024
+# Loading work.clock
+# Loading sv_std.std
+# Loading work.counter
+# Loading work.parser
+# Loading work.sync
+# Loading work.comparator
+# Loading work.SevSegDriver
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst4'.  Expected 7, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /clock/b2v_inst4 File: C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v Line: 67
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'lt'.
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ogw  Hostname: DESKTOP-EKD6G0E  ProcessID: 21172
+#           Attempting to use alternate WLF file "./wlfthb7sfi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthb7sfi
+do doclock
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/ModelSim/Lab5.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/ModelSim/Lab5.mpf).  File can not be renamed.
+# End time: 15:58:40 on Nov 05,2024, Elapsed time: 0:01:32
+# Errors: 2, Warnings: 9
+# vsim -gui clock 
+# Start time: 15:58:40 on Nov 05,2024
+# Loading work.clock
+# Loading sv_std.std
+# Loading work.counter
+# Loading work.parser
+# Loading work.sync
+# Loading work.comparator
+# Loading work.SevSegDriver
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'b2v_inst4'.  Expected 7, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /clock/b2v_inst4 File: C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v Line: 67
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'lt'.
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v(67): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ogw  Hostname: DESKTOP-EKD6G0E  ProcessID: 21172
+#           Attempting to use alternate WLF file "./wlftgnky73".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgnky73
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/ModelSim/Lab5.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/ModelSim/Lab5.mpf).  File can not be renamed.
+# End time: 16:14:09 on Nov 05,2024, Elapsed time: 0:15:29
+# Errors: 2, Warnings: 9

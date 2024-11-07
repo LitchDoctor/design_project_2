@@ -1,0 +1,200 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+vclock
+Z0 !s110 1730848535
+!i10b 1
+!s100 B3CZTz9Tm;m2bhMfjg5?f0
+IaCl1E5gUDmCe`F`6KY7Rm0
+Z1 dC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/ModelSim
+w1730767775
+8C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v
+FC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v
+!i122 118
+L0 20 74
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OV;L;2021.1;73
+r1
+!s85 0
+31
+Z4 !s108 1730848535.000000
+!s107 C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/clock.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcomparator
+Z7 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+R0
+!i10b 1
+!s100 H2?o0RnlY`Zj>8hmTzL7B2
+IRA5Oea<Lz^>8::B=gHDR63
+S1
+R1
+w1730751641
+8C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/comparator.sv
+FC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/comparator.sv
+!i122 121
+L0 1 12
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/comparator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/comparator.sv|
+!i113 1
+Z8 o-work work -sv
+R6
+vcounter
+R7
+R0
+!i10b 1
+!s100 Q9I?Wz6YB_WOONX7jel<31
+INO5D]JV8KLRmnRglF1WRT1
+S1
+R1
+w1730749622
+8C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/counter.sv
+FC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/counter.sv
+!i122 122
+L0 1 10
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/counter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/counter.sv|
+!i113 1
+R8
+R6
+vparser
+R7
+R0
+!i10b 1
+!s100 ANiZ^K6^4=8b]0MjHdzYS2
+I9TCO]^=J;[?Z?ez4AY`ag1
+S1
+R1
+w1730841462
+8C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/parser.sv
+FC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/parser.sv
+!i122 123
+L0 1 14
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/parser.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/parser.sv|
+!i113 1
+R8
+R6
+vSecondCLK
+R0
+!i10b 1
+!s100 58JNeBX[VT39jaadIlnjc2
+If6ZW^=Jn>TBTOZDVa7BGU0
+R1
+w1730757253
+8C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SecondCLK.v
+FC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SecondCLK.v
+!i122 120
+L0 20 49
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SecondCLK.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SecondCLK.v|
+!i113 1
+R5
+R6
+n@second@c@l@k
+vSevSegDriver
+R7
+R0
+!i10b 1
+!s100 P]M7HUUDfJ8D`^jK<c=Ed1
+Ibi@JN_E^z91J^5PkF6=Gm2
+S1
+R1
+w1730748719
+8C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sevenSegDriver.sv
+FC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sevenSegDriver.sv
+!i122 125
+L0 1 28
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sevenSegDriver.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sevenSegDriver.sv|
+!i113 1
+R8
+R6
+n@sev@seg@driver
+vSMHClock
+R0
+!i10b 1
+!s100 ihU>]cT1gDfS6oi0Sae9[1
+IinYn=O;MWL<5X1azV75`I1
+R1
+w1730767055
+8C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SMHClock.v
+FC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SMHClock.v
+!i122 119
+L0 20 53
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SMHClock.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/SMHClock.v|
+!i113 1
+R5
+R6
+n@s@m@h@clock
+vsync
+R7
+R0
+!i10b 1
+!s100 eSc0F275:TJeUYElH>]Fo2
+IB3X<HQQ1:GFAL@gYaeclh1
+S1
+R1
+w1730748667
+8C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sync.sv
+FC:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sync.sv
+!i122 124
+L0 1 13
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sync.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ogw/OneDrive/Documents/ECE 272/Lab5/sync.sv|
+!i113 1
+R8
+R6

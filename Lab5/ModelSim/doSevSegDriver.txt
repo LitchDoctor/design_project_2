@@ -1,0 +1,10 @@
+vsim -gui SevSegDriver
+
+add wave *
+
+force hex[3] 1 @ 10
+force hex[2] 0 @ 10
+force hex[1] 0 @ 10
+force hex[0] 1 @ 10
+
+run 20

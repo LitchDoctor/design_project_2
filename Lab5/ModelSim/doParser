@@ -1,0 +1,16 @@
+vsim -gui parser
+
+add wave *
+
+force I[7] 0 @ 10
+force I[6] 0 @ 10
+force I[5] 0 @ 10
+force I[4] 0 @ 10
+force I[3] 1 @ 10
+force I[2] 1 @ 10
+force I[1] 1 @ 10
+force I[0] 1 @ 10
+
+
+run 20
+

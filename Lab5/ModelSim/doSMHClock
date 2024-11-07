@@ -1,0 +1,11 @@
+vsim -gui SMHClock
+
+add wave *
+
+force FCLK 1, 0 20 -r 20
+force RESET 0 @ 0
+force RESET 1 @ 10
+
+
+run 180
+

@@ -1,0 +1,11 @@
+vsim -gui clock
+
+add wave *
+
+force CLK 1, 0 10 -r 10
+force RESET 0 @ 0
+force RESET 1 @ 5
+
+
+run 700
+
