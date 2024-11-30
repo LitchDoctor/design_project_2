@@ -1,0 +1,79 @@
+module DirectClockInputs(input logic RESET,
+								 input logic INCREMENT,
+								 input logic [1:0] s,
+								
+								 output logic RC,
+								 output logic IC,
+								 
+								 output logic RA1,
+								 output logic IA1,
+								 
+								 output logic RA2,
+								 output logic IA2,
+								 
+								 output logic RA3,
+								 output logic IA3,
+								 );
+								 
+			 case(s)
+				2'b00: begin
+				
+								 RC = RESET,
+								 IC = INCREMENT,
+								 
+								 RA1 = 0,
+								 IA1 = 0,
+								 
+								 RA2 = 0,
+								 IA2 = 0,
+								 
+								 RA3 = 0,
+								 IA3 = 0,
+				end
+				
+								2'b01: begin
+				
+								 RC = 0,
+								 IC = 0,
+								 
+								 RA1 = RESET,
+								 IA1 = INCREMENT,
+								 
+								 RA2 = 0,
+								 IA2 = 0,
+								 
+								 RA3 = 0,
+								 IA3 = 0,
+				end
+				
+								2'b10: begin
+				
+								 RC = 0,
+								 IC = 0,
+								 
+								 RA1 = 0,
+								 IA1 = 0,
+								 
+								 RA2 = RESET,
+								 IA2 = INCREMENT,
+								 
+								 RA3 = 0,
+								 IA3 = 0,
+				end
+				
+								2'b11: begin
+				
+								 RC = 0,
+								 IC = 0,
+								 
+								 RA1 = 0,
+								 IA1 = 0,
+								 
+								 RA2 = 0,
+								 IA2 = 0,
+								 
+								 RA3 = RESET,
+								 IA3 = INCREMENT,
+				end
+ endmodule
+			 

@@ -2,7 +2,6 @@ module AlarmTime(
     input logic INCREMENT,
     input logic RESET,
     input logic [1:0] ORDER,
-    input logic SCND,
     
 	 output reg [7:0] seconds,
     output reg [7:0] minutes,
@@ -32,20 +31,28 @@ module AlarmTime(
 					case(ORDER)
 						2'b00: begin
 							seconds <= seconds + 1; 
-							if (seconds > 59) seconds <= 0;
-							
 						end
 						2'b01: begin
 							minutes <= minutes + 1;
-							if (minutes > 59) minutes <= 0;
-						
 						end
 						2'b10: begin
 							hours <= hours + 1;
-							if (hours > 23) hours <= 0;
 						end
 						
 					endcase
+					//Loop Checks
+					if (seconds >= 59) begin
+						seconds <= 0;
+						minutes <= minutes+1;
+					end
+					
+					if (minutes >= 59) begin
+						minutes <= 0;
+						hours <= hours + 1;
+					end
+					
+					
+					if (hours >= 23) hours <= 0;
 			end
 	end
 endmodule
