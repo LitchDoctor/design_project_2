@@ -8,13 +8,18 @@ module AlarmTime(
     output reg [7:0] hours = 0
 );
 
+	logic last_inc = 0;
+	
+	always_ff@(posedge INCREMENT) begin
+		last_inc <= INCREMENT;
+	end
 
-    always @(posedge INCREMENT or negedge RESET) begin
+    always @(posedge last_inc or negedge RESET) begin
             if (!RESET) begin
                 seconds <= 0;
                 minutes <= 0;
                 hours <= 0;
-            end else if (INCREMENT) begin
+            end else if (last_inc) begin
 				
 					case(ORDER)
 						2'b00: begin
