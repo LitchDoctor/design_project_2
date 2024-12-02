@@ -1,7 +1,7 @@
 module ClockTime(
     input wire CLK,
     input wire RST,
-	 input logic INCREMENT,
+	input logic INCREMENT,
 	 
     input logic [1:0] ORDER,
     output reg [7:0] seconds = 0,
@@ -11,6 +11,12 @@ module ClockTime(
     reg [31:0] counter = 0;
     parameter CLOCK_FREQ = 50000000; // Assume a 50 MHz clock
 
+	reg posedge_inc = 0;
+
+	always_ff@(posedge INCREMENT) begin
+		posedge_inc <= INCREMENT;
+	end
+
     always @(posedge CLK, negedge RST) begin
             if (!RST) begin
                 counter <= 0;
@@ -19,6 +25,11 @@ module ClockTime(
                 hours <= 0;
             end else begin
 				   counter <= counter + 1;
+
+					if (posedge_inc) begin
+						seconds <= seconds + 1;
+					end	
+
 				   if (counter >= CLOCK_FREQ - 1) begin
 						counter <= 0;
 						seconds <= seconds + 1; 
@@ -36,8 +47,6 @@ module ClockTime(
 						
 						if (hours >= (24-1)) hours <= 0;
 					end//endif
-            
-
 			end //end - if not rst
     end //end always block
 endmodule
