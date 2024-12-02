@@ -11,15 +11,14 @@ module ClockTime(
     reg [31:0] counter = 0;
     parameter CLOCK_FREQ = 50000000; // Assume a 50 MHz clock
 
-    always @(posedge CLK, posedge INCREMENT) begin
+    always @(posedge CLK, negedge RST) begin
             if (!RST) begin
                 counter <= 0;
                 seconds <= 0;
                 minutes <= 0;
                 hours <= 0;
             end else begin
-				
-					case(ORDER)
+					/*case(ORDER)
 						2'b00: begin
 							seconds <= seconds + 1; 
 						end
@@ -30,27 +29,28 @@ module ClockTime(
 							hours <= hours + 1;
 						end
 						
-					endcase
+					endcase*/
+				
 
-				  if (CLK) counter <= counter + 1;
-					  if ( INCREMENT || (counter >= CLOCK_FREQ - 1)) begin
-							  counter <= 0;
-							  seconds <= seconds + 1;
-
-							  if (seconds >= 59) begin
-									 seconds <= 0;
-									 minutes <= minutes + 1;
-
-									 if (minutes >= 59) begin
-											minutes <= 0;
-											hours <= hours + 1;
-
-											if (hours >= 23) begin
-													hours <= 0;
-											end
-									 end
-							  end
-						end
-            end
-    end
+				   counter <= counter + 1;
+				   if (counter >= CLOCK_FREQ - 1) begin
+						  counter <= 0;
+						  seconds <= seconds + 1; 
+					end//endif
+            
+					//Loop Checks
+					if (seconds >= 59) begin
+						seconds <= 0;
+						minutes <= minutes+1;
+					end//endif
+					
+					if (minutes >= 59) begin
+						minutes <= 0;
+						hours <= hours + 1;
+					end //endif
+					
+					
+					if (hours >= 23) hours <= 0;
+			end //end - if not rst
+    end //end always block
 endmodule

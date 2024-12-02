@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -4.399
+TNS   : -277.369
+
+Type  : Slow 1200mV 85C Model Setup 'DirectClockInputs:inst15|IA3'
+Slack : -2.651
+TNS   : -53.466
+
+Type  : Slow 1200mV 85C Model Setup 'DirectClockInputs:inst15|IA1'
+Slack : -2.530
+TNS   : -52.749
+
+Type  : Slow 1200mV 85C Model Setup 'DirectClockInputs:inst15|IA2'
+Slack : -2.436
+TNS   : -48.048
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DirectClockInputs:inst15|IA2'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DirectClockInputs:inst15|IA3'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DirectClockInputs:inst15|IA1'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'DirectClockInputs:inst15|IA2'
+Slack : -1.945
+TNS   : -42.973
+
+Type  : Slow 1200mV 85C Model Recovery 'DirectClockInputs:inst15|IA1'
+Slack : -1.796
+TNS   : -37.493
+
+Type  : Slow 1200mV 85C Model Recovery 'DirectClockInputs:inst15|IA3'
+Slack : -1.650
+TNS   : -37.516
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK'
+Slack : -0.907
+TNS   : -31.314
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : 1.041
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'DirectClockInputs:inst15|IA3'
+Slack : 1.843
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'DirectClockInputs:inst15|IA1'
+Slack : 1.940
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'DirectClockInputs:inst15|IA2'
+Slack : 2.097
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -125.061
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA1'
+Slack : -1.403
+TNS   : -33.672
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA2'
+Slack : -1.403
+TNS   : -33.672
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA3'
+Slack : -1.403
+TNS   : -33.672
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -3.981
+TNS   : -250.271
+
+Type  : Slow 1200mV 0C Model Setup 'DirectClockInputs:inst15|IA3'
+Slack : -2.349
+TNS   : -47.329
+
+Type  : Slow 1200mV 0C Model Setup 'DirectClockInputs:inst15|IA1'
+Slack : -2.274
+TNS   : -46.967
+
+Type  : Slow 1200mV 0C Model Setup 'DirectClockInputs:inst15|IA2'
+Slack : -2.165
+TNS   : -42.213
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DirectClockInputs:inst15|IA1'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DirectClockInputs:inst15|IA2'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DirectClockInputs:inst15|IA3'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'DirectClockInputs:inst15|IA2'
+Slack : -1.767
+TNS   : -38.465
+
+Type  : Slow 1200mV 0C Model Recovery 'DirectClockInputs:inst15|IA1'
+Slack : -1.608
+TNS   : -33.269
+
+Type  : Slow 1200mV 0C Model Recovery 'DirectClockInputs:inst15|IA3'
+Slack : -1.469
+TNS   : -33.293
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK'
+Slack : -0.764
+TNS   : -24.724
+
+Type  : Slow 1200mV 0C Model Removal 'CLK'
+Slack : 0.931
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'DirectClockInputs:inst15|IA3'
+Slack : 1.698
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'DirectClockInputs:inst15|IA1'
+Slack : 1.762
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'DirectClockInputs:inst15|IA2'
+Slack : 1.924
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -125.061
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA1'
+Slack : -1.403
+TNS   : -33.672
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA2'
+Slack : -1.403
+TNS   : -33.672
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA3'
+Slack : -1.403
+TNS   : -33.672
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.316
+TNS   : -71.152
+
+Type  : Fast 1200mV 0C Model Setup 'DirectClockInputs:inst15|IA3'
+Slack : -0.578
+TNS   : -8.417
+
+Type  : Fast 1200mV 0C Model Setup 'DirectClockInputs:inst15|IA1'
+Slack : -0.481
+TNS   : -8.011
+
+Type  : Fast 1200mV 0C Model Setup 'DirectClockInputs:inst15|IA2'
+Slack : -0.465
+TNS   : -6.032
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DirectClockInputs:inst15|IA1'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DirectClockInputs:inst15|IA2'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DirectClockInputs:inst15|IA3'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'DirectClockInputs:inst15|IA2'
+Slack : -0.338
+TNS   : -6.523
+
+Type  : Fast 1200mV 0C Model Recovery 'DirectClockInputs:inst15|IA1'
+Slack : -0.301
+TNS   : -4.136
+
+Type  : Fast 1200mV 0C Model Recovery 'DirectClockInputs:inst15|IA3'
+Slack : -0.212
+TNS   : -3.881
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'CLK'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'DirectClockInputs:inst15|IA3'
+Slack : 0.742
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'DirectClockInputs:inst15|IA1'
+Slack : 0.772
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'DirectClockInputs:inst15|IA2'
+Slack : 0.842
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -105.655
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA1'
+Slack : -1.000
+TNS   : -24.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA2'
+Slack : -1.000
+TNS   : -24.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DirectClockInputs:inst15|IA3'
+Slack : -1.000
+TNS   : -24.000
+
+------------------------------------------------------------

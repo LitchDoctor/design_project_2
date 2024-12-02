@@ -3,30 +3,18 @@ module AlarmTime(
     input logic RESET,
     input logic [1:0] ORDER,
     
-	 output reg [7:0] seconds,
-    output reg [7:0] minutes,
-    output reg [7:0] hours
+	 output reg [7:0] seconds = 0,
+    output reg [7:0] minutes = 0,
+    output reg [7:0] hours = 0
 );
 
-    // Initial block to set default values during simulation
-    initial begin
-        seconds = 0;
-        minutes = 0;
-        hours = 0;
-    end
 
-
-	 initial begin
-        seconds = 0;
-        minutes = 0;
-        hours = 0;
-    end
-    always @(posedge INCREMENT) begin
+    always @(posedge INCREMENT or negedge RESET) begin
             if (!RESET) begin
                 seconds <= 0;
                 minutes <= 0;
                 hours <= 0;
-            end else begin
+            end else if (INCREMENT) begin
 				
 					case(ORDER)
 						2'b00: begin
@@ -56,3 +44,4 @@ module AlarmTime(
 			end
 	end
 endmodule
+

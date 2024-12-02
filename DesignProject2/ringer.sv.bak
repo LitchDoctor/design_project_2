@@ -1,0 +1,30 @@
+module ringer (
+    input logic clk,      // 50 MHz clock input
+    input logic on,       // Control signal to turn the sound on or off
+    output logic sound    // Output sound signal
+);
+
+    // Parameters
+    parameter TARGET_FREQ = 1000;  // Target frequency in Hz
+    localparam CLK_FREQ = 50000000; // Clock frequency in Hz
+    localparam TOGGLE_COUNT = CLK_FREQ / (2 * TARGET_FREQ); // Toggle count for desired frequency
+
+    // Internal signal
+    logic [$clog2(TOGGLE_COUNT):0] counter; // Counter to divide clock
+
+    // Sequential logic
+    always_ff @(posedge clk) begin
+        if (on) begin
+            if (counter == TOGGLE_COUNT - 1) begin
+                counter <= 0;
+                sound <= ~sound; // Toggle sound output
+            end else begin
+                counter <= counter + 1;
+            end
+        end else begin
+            counter <= 0;
+            sound <= 0; // No sound output when "on" is false
+        end
+    end
+
+endmodule

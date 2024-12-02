@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DesignProject2
-Mon Nov 25 20:33:27 2024
+Sun Dec  1 23:25:44 2024
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -10,7 +10,22 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: ringer:inst24
+ 11. Parameter Settings for User Entity Instance: ClockTime:inst14
+ 12. Parameter Settings for Inferred Entity Instance: parser:inst2|lpm_divide:Mod0
+ 13. Parameter Settings for Inferred Entity Instance: parser:inst2|lpm_divide:Div0
+ 14. Parameter Settings for Inferred Entity Instance: parser:inst3|lpm_divide:Mod0
+ 15. Parameter Settings for Inferred Entity Instance: parser:inst3|lpm_divide:Div0
+ 16. Parameter Settings for Inferred Entity Instance: parser:inst4|lpm_divide:Mod0
+ 17. Parameter Settings for Inferred Entity Instance: parser:inst4|lpm_divide:Div0
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -37,22 +52,22 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Nov 25 20:33:27 2024              ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec  1 23:25:43 2024          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; DesignProject2                                 ;
-; Top-level Entity Name              ; AlarmClock                                     ;
+; Top-level Entity Name              ; DesignProject2                                 ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
-; UFM blocks                         ; N/A until Partition Merge                      ;
-; ADC blocks                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 819                                            ;
+;     Total combinational functions  ; 819                                            ;
+;     Dedicated logic registers      ; 159                                            ;
+; Total registers                    ; 159                                            ;
+; Total pins                         ; 53                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -62,7 +77,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; AlarmClock         ; DesignProject2     ;
+; Top-level entity name                                            ; DesignProject2     ; DesignProject2     ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,11 +166,355 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; DesignProject2.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/DesignProject2.bdf         ;         ;
+; AlarmCheck.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmCheck.sv              ;         ;
+; AlarmTime.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv               ;         ;
+; parser.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv                  ;         ;
+; SevenSegmentDriver.sv            ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/SevenSegmentDriver.sv      ;         ;
+; mux4.sv                          ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/mux4.sv                    ;         ;
+; ClockTime.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv               ;         ;
+; DirectClockInputs.sv             ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/DirectClockInputs.sv       ;         ;
+; ringer.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ringer.sv                  ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                  ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                 ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                             ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                  ;         ;
+; db/lpm_divide_ckl.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/lpm_divide_ckl.tdf      ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/sign_div_unsign_bkh.tdf ;         ;
+; db/alt_u_div_0fe.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/alt_u_div_0fe.tdf       ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/add_sub_t3c.tdf         ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/add_sub_u3c.tdf         ;         ;
+; db/lpm_divide_9sl.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/lpm_divide_9sl.tdf      ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 819       ;
+;                                             ;           ;
+; Total combinational functions               ; 819       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 302       ;
+;     -- 3 input functions                    ; 129       ;
+;     -- <=2 input functions                  ; 388       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 568       ;
+;     -- arithmetic mode                      ; 251       ;
+;                                             ;           ;
+; Total registers                             ; 159       ;
+;     -- Dedicated logic registers            ; 159       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 53        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 87        ;
+; Total fan-out                               ; 2922      ;
+; Average fan-out                             ; 2.70      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                          ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |DesignProject2                           ; 819 (48)            ; 159 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 53   ; 0            ; 0          ; |DesignProject2                                                                                                              ; DesignProject2      ; work         ;
+;    |AlarmTime:inst16|                     ; 63 (63)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|AlarmTime:inst16                                                                                             ; AlarmTime           ; work         ;
+;    |AlarmTime:inst17|                     ; 63 (63)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|AlarmTime:inst17                                                                                             ; AlarmTime           ; work         ;
+;    |AlarmTime:inst|                       ; 66 (66)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|AlarmTime:inst                                                                                               ; AlarmTime           ; work         ;
+;    |ClockTime:inst14|                     ; 103 (103)           ; 56 (56)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|ClockTime:inst14                                                                                             ; ClockTime           ; work         ;
+;    |DirectClockInputs:inst15|             ; 7 (7)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|DirectClockInputs:inst15                                                                                     ; DirectClockInputs   ; work         ;
+;    |SevenSegmentDriver:inst10|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst10                                                                                    ; SevenSegmentDriver  ; work         ;
+;    |SevenSegmentDriver:inst5|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst5                                                                                     ; SevenSegmentDriver  ; work         ;
+;    |SevenSegmentDriver:inst6|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst6                                                                                     ; SevenSegmentDriver  ; work         ;
+;    |SevenSegmentDriver:inst7|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst7                                                                                     ; SevenSegmentDriver  ; work         ;
+;    |SevenSegmentDriver:inst8|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst8                                                                                     ; SevenSegmentDriver  ; work         ;
+;    |SevenSegmentDriver:inst9|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst9                                                                                     ; SevenSegmentDriver  ; work         ;
+;    |mux4:inst11|                          ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|mux4:inst11                                                                                                  ; mux4                ; work         ;
+;    |mux4:inst12|                          ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|mux4:inst12                                                                                                  ; mux4                ; work         ;
+;    |mux4:inst1|                           ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|mux4:inst1                                                                                                   ; mux4                ; work         ;
+;    |parser:inst2|                         ; 115 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2                                                                                                 ; parser              ; work         ;
+;       |lpm_divide:Div0|                   ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_9sl:auto_generated|  ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2|lpm_divide:Div0|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 56 (56)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;       |lpm_divide:Mod0|                   ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 59 (59)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst2|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |parser:inst3|                         ; 115 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3                                                                                                 ; parser              ; work         ;
+;       |lpm_divide:Div0|                   ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_9sl:auto_generated|  ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3|lpm_divide:Div0|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 56 (56)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;       |lpm_divide:Mod0|                   ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 59 (59)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst3|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |parser:inst4|                         ; 115 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4                                                                                                 ; parser              ; work         ;
+;       |lpm_divide:Div0|                   ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_9sl:auto_generated|  ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4|lpm_divide:Div0|lpm_divide_9sl:auto_generated                                                   ; lpm_divide_9sl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 56 (56)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4|lpm_divide:Div0|lpm_divide_9sl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;       |lpm_divide:Mod0|                   ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 59 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 59 (59)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|parser:inst4|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |ringer:inst24|                        ; 34 (34)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|ringer:inst24                                                                                                ; ringer              ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 159   ;
+; Number of registers using Synchronous Clear  ; 55    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 128   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 3:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; Yes        ; |DesignProject2|ringer:inst24|counter[7]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|seconds[5]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|seconds[6] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|seconds[3] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|minutes[2]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|minutes[7] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|minutes[7] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|hours[6]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|hours[6]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|hours[0]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|ClockTime:inst14|seconds[3] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|ClockTime:inst14|minutes[3] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|ClockTime:inst14|hours[7]   ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DesignProject2|mux4:inst1|o[4]             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ringer:inst24 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; TARGET_FREQ    ; 10    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ClockTime:inst14 ;
++----------------+----------+-----------------------------------+
+; Parameter Name ; Value    ; Type                              ;
++----------------+----------+-----------------------------------+
+; CLOCK_FREQ     ; 50000000 ; Signed Integer                    ;
++----------------+----------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: parser:inst2|lpm_divide:Mod0 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: parser:inst2|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_9sl ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: parser:inst3|lpm_divide:Mod0 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: parser:inst3|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_9sl ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: parser:inst4|lpm_divide:Mod0 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: parser:inst4|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                             ;
+; LPM_WIDTHD             ; 4              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_9sl ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 53                          ;
+; cycloneiii_ff         ; 159                         ;
+;     CLR               ; 68                          ;
+;     CLR SCLR          ; 32                          ;
+;     ENA CLR           ; 28                          ;
+;     SCLR              ; 23                          ;
+;     plain             ; 8                           ;
+; cycloneiii_lcell_comb ; 825                         ;
+;     arith             ; 251                         ;
+;         2 data inputs ; 155                         ;
+;         3 data inputs ; 96                          ;
+;     normal            ; 574                         ;
+;         0 data inputs ; 30                          ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 189                         ;
+;         3 data inputs ; 33                          ;
+;         4 data inputs ; 302                         ;
+;                       ;                             ;
+; Max LUT depth         ; 15.90                       ;
+; Average LUT depth     ; 8.87                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -164,7 +523,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Mon Nov 25 20:33:16 2024
+    Info: Processing started: Sun Dec  1 23:25:33 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DesignProject2 -c DesignProject2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -172,11 +531,82 @@ Info (12021): Found 1 design units, including 1 entities, in source file designp
     Info (12023): Found entity 1: DesignProject2
 Info (12021): Found 1 design units, including 1 entities, in source file alarmcheck.sv
     Info (12023): Found entity 1: AlarmCheck File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmCheck.sv Line: 1
-Error (12007): Top-level design entity "AlarmClock" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4719 megabytes
-    Error: Processing ended: Mon Nov 25 20:33:27 2024
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:25
+Info (12021): Found 1 design units, including 1 entities, in source file alarmtime.sv
+    Info (12023): Found entity 1: AlarmTime File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file parser.sv
+    Info (12023): Found entity 1: parser File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sevensegmentdriver.sv
+    Info (12023): Found entity 1: SevenSegmentDriver File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/SevenSegmentDriver.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.sv
+    Info (12023): Found entity 1: mux4 File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/mux4.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clocktime.sv
+    Info (12023): Found entity 1: ClockTime File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file directclockinputs.sv
+    Info (12023): Found entity 1: DirectClockInputs File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/DirectClockInputs.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ringer.sv
+    Info (12023): Found entity 1: ringer File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ringer.sv Line: 1
+Info (12127): Elaborating entity "DesignProject2" for the top level hierarchy
+Info (12128): Elaborating entity "ringer" for hierarchy "ringer:inst24"
+Warning (10230): Verilog HDL assignment warning at ringer.sv(22): truncated value with size 32 to match size of target (23) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ringer.sv Line: 22
+Info (12128): Elaborating entity "AlarmCheck" for hierarchy "AlarmCheck:inst19"
+Info (12128): Elaborating entity "AlarmTime" for hierarchy "AlarmTime:inst16"
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(21): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(24): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 24
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(27): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(34): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(39): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 39
+Info (12128): Elaborating entity "DirectClockInputs" for hierarchy "DirectClockInputs:inst15"
+Info (12128): Elaborating entity "ClockTime" for hierarchy "ClockTime:inst14"
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(38): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv Line: 38
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(44): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(49): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv Line: 49
+Info (12128): Elaborating entity "SevenSegmentDriver" for hierarchy "SevenSegmentDriver:inst10"
+Info (12128): Elaborating entity "parser" for hierarchy "parser:inst2"
+Warning (10230): Verilog HDL assignment warning at parser.sv(10): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at parser.sv(12): truncated value with size 32 to match size of target (4) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:inst1"
+Info (278001): Inferred 6 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst2|Mod0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst2|Div0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst3|Mod0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst3|Div0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst4|Mod0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst4|Div0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
+Info (12130): Elaborated megafunction instantiation "parser:inst2|lpm_divide:Mod0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
+Info (12133): Instantiated megafunction "parser:inst2|lpm_divide:Mod0" with the following parameter: File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ckl.tdf
+    Info (12023): Found entity 1: lpm_divide_ckl File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/lpm_divide_ckl.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/sign_div_unsign_bkh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0fe.tdf
+    Info (12023): Found entity 1: alt_u_div_0fe File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/alt_u_div_0fe.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/add_sub_t3c.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/add_sub_u3c.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "parser:inst2|lpm_divide:Div0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
+Info (12133): Instantiated megafunction "parser:inst2|lpm_divide:Div0" with the following parameter: File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9sl.tdf
+    Info (12023): Found entity 1: lpm_divide_9sl File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/lpm_divide_9sl.tdf Line: 25
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 872 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 43 output pins
+    Info (21061): Implemented 819 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Sun Dec  1 23:25:44 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
 
 
