@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DesignProject2
-Sun Dec  1 23:25:44 2024
+Mon Dec  2 15:47:40 2024
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -52,15 +52,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec  1 23:25:43 2024          ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec  2 15:47:40 2024          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; DesignProject2                                 ;
 ; Top-level Entity Name              ; DesignProject2                                 ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 819                                            ;
-;     Total combinational functions  ; 819                                            ;
-;     Dedicated logic registers      ; 159                                            ;
-; Total registers                    ; 159                                            ;
+; Total logic elements               ; 829                                            ;
+;     Total combinational functions  ; 826                                            ;
+;     Dedicated logic registers      ; 163                                            ;
+; Total registers                    ; 163                                            ;
 ; Total pins                         ; 53                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -162,43 +162,44 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; DesignProject2.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/DesignProject2.bdf         ;         ;
-; AlarmCheck.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmCheck.sv              ;         ;
-; AlarmTime.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv               ;         ;
-; parser.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv                  ;         ;
-; SevenSegmentDriver.sv            ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/SevenSegmentDriver.sv      ;         ;
-; mux4.sv                          ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/mux4.sv                    ;         ;
-; ClockTime.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv               ;         ;
-; DirectClockInputs.sv             ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/DirectClockInputs.sv       ;         ;
-; ringer.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ringer.sv                  ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf                                  ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc                                 ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                             ;         ;
-; aglobal221.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                  ;         ;
-; db/lpm_divide_ckl.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/lpm_divide_ckl.tdf      ;         ;
-; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/sign_div_unsign_bkh.tdf ;         ;
-; db/alt_u_div_0fe.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/alt_u_div_0fe.tdf       ;         ;
-; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/add_sub_t3c.tdf         ;         ;
-; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/add_sub_u3c.tdf         ;         ;
-; db/lpm_divide_9sl.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/lpm_divide_9sl.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; DesignProject2.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/DesignProject2/DesignProject2.bdf                           ;         ;
+; AlarmCheck.sv                    ; yes             ; User SystemVerilog HDL File        ; C:/intelFPGA_lite/DesignProject2/AlarmCheck.sv                                ;         ;
+; AlarmTime.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/intelFPGA_lite/DesignProject2/AlarmTime.sv                                 ;         ;
+; parser.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/intelFPGA_lite/DesignProject2/parser.sv                                    ;         ;
+; SevenSegmentDriver.sv            ; yes             ; User SystemVerilog HDL File        ; C:/intelFPGA_lite/DesignProject2/SevenSegmentDriver.sv                        ;         ;
+; mux4.sv                          ; yes             ; User SystemVerilog HDL File        ; C:/intelFPGA_lite/DesignProject2/mux4.sv                                      ;         ;
+; ClockTime.sv                     ; yes             ; User SystemVerilog HDL File        ; C:/intelFPGA_lite/DesignProject2/ClockTime.sv                                 ;         ;
+; DirectClockInputs.sv             ; yes             ; User SystemVerilog HDL File        ; C:/intelFPGA_lite/DesignProject2/DirectClockInputs.sv                         ;         ;
+; ringer.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/intelFPGA_lite/DesignProject2/ringer.sv                                    ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc      ;         ;
+; db/lpm_divide_ckl.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/DesignProject2/db/lpm_divide_ckl.tdf                        ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/DesignProject2/db/sign_div_unsign_bkh.tdf                   ;         ;
+; db/alt_u_div_0fe.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/DesignProject2/db/alt_u_div_0fe.tdf                         ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/DesignProject2/db/add_sub_t3c.tdf                           ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/DesignProject2/db/add_sub_u3c.tdf                           ;         ;
+; db/lpm_divide_9sl.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/DesignProject2/db/lpm_divide_9sl.tdf                        ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -206,20 +207,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 819       ;
+; Estimated Total logic elements              ; 829       ;
 ;                                             ;           ;
-; Total combinational functions               ; 819       ;
+; Total combinational functions               ; 826       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 302       ;
+;     -- 4 input functions                    ; 305       ;
 ;     -- 3 input functions                    ; 129       ;
-;     -- <=2 input functions                  ; 388       ;
+;     -- <=2 input functions                  ; 392       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 568       ;
+;     -- normal mode                          ; 575       ;
 ;     -- arithmetic mode                      ; 251       ;
 ;                                             ;           ;
-; Total registers                             ; 159       ;
-;     -- Dedicated logic registers            ; 159       ;
+; Total registers                             ; 163       ;
+;     -- Dedicated logic registers            ; 163       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 53        ;
@@ -227,9 +228,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 87        ;
-; Total fan-out                               ; 2922      ;
-; Average fan-out                             ; 2.70      ;
+; Maximum fan-out                             ; 91        ;
+; Total fan-out                               ; 2973      ;
+; Average fan-out                             ; 2.72      ;
 +---------------------------------------------+-----------+
 
 
@@ -238,12 +239,12 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                          ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |DesignProject2                           ; 819 (48)            ; 159 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 53   ; 0            ; 0          ; |DesignProject2                                                                                                              ; DesignProject2      ; work         ;
+; |DesignProject2                           ; 826 (48)            ; 163 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 53   ; 0            ; 0          ; |DesignProject2                                                                                                              ; DesignProject2      ; work         ;
 ;    |AlarmTime:inst16|                     ; 63 (63)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|AlarmTime:inst16                                                                                             ; AlarmTime           ; work         ;
 ;    |AlarmTime:inst17|                     ; 63 (63)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|AlarmTime:inst17                                                                                             ; AlarmTime           ; work         ;
-;    |AlarmTime:inst|                       ; 66 (66)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|AlarmTime:inst                                                                                               ; AlarmTime           ; work         ;
-;    |ClockTime:inst14|                     ; 103 (103)           ; 56 (56)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|ClockTime:inst14                                                                                             ; ClockTime           ; work         ;
-;    |DirectClockInputs:inst15|             ; 7 (7)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|DirectClockInputs:inst15                                                                                     ; DirectClockInputs   ; work         ;
+;    |AlarmTime:inst|                       ; 63 (63)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|AlarmTime:inst                                                                                               ; AlarmTime           ; work         ;
+;    |ClockTime:inst14|                     ; 112 (112)           ; 59 (59)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|ClockTime:inst14                                                                                             ; ClockTime           ; work         ;
+;    |DirectClockInputs:inst15|             ; 8 (8)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|DirectClockInputs:inst15                                                                                     ; DirectClockInputs   ; work         ;
 ;    |SevenSegmentDriver:inst10|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst10                                                                                    ; SevenSegmentDriver  ; work         ;
 ;    |SevenSegmentDriver:inst5|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst5                                                                                     ; SevenSegmentDriver  ; work         ;
 ;    |SevenSegmentDriver:inst6|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DesignProject2|SevenSegmentDriver:inst6                                                                                     ; SevenSegmentDriver  ; work         ;
@@ -290,12 +291,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 159   ;
-; Number of registers using Synchronous Clear  ; 55    ;
+; Total registers                              ; 163   ;
+; Number of registers using Synchronous Clear  ; 63    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 128   ;
+; Number of registers using Asynchronous Clear ; 131   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Clock Enable       ; 40    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -305,20 +306,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 3:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; Yes        ; |DesignProject2|ringer:inst24|counter[7]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|seconds[5]   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|seconds[6] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|seconds[3] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|minutes[2]   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|minutes[7] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|minutes[7] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|hours[6]     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|hours[6]   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|hours[0]   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|ClockTime:inst14|seconds[3] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|ClockTime:inst14|minutes[3] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|ClockTime:inst14|hours[7]   ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DesignProject2|mux4:inst1|o[4]             ;
+; 3:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; Yes        ; |DesignProject2|ringer:inst24|counter[22]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|seconds[2]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|seconds[4] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|seconds[5] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|minutes[0]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|minutes[3] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|minutes[3] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst|hours[4]     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst16|hours[5]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DesignProject2|AlarmTime:inst17|hours[3]   ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |DesignProject2|ClockTime:inst14|seconds[7] ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |DesignProject2|ClockTime:inst14|minutes[2] ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |DesignProject2|ClockTime:inst14|hours[4]   ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |DesignProject2|mux4:inst1|o[7]             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
@@ -486,25 +487,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 53                          ;
-; cycloneiii_ff         ; 159                         ;
-;     CLR               ; 68                          ;
+; cycloneiii_ff         ; 163                         ;
+;     CLR               ; 59                          ;
 ;     CLR SCLR          ; 32                          ;
-;     ENA CLR           ; 28                          ;
+;     ENA CLR           ; 32                          ;
+;     ENA CLR SCLR      ; 8                           ;
 ;     SCLR              ; 23                          ;
-;     plain             ; 8                           ;
-; cycloneiii_lcell_comb ; 825                         ;
+;     plain             ; 9                           ;
+; cycloneiii_lcell_comb ; 832                         ;
 ;     arith             ; 251                         ;
 ;         2 data inputs ; 155                         ;
 ;         3 data inputs ; 96                          ;
-;     normal            ; 574                         ;
+;     normal            ; 581                         ;
 ;         0 data inputs ; 30                          ;
 ;         1 data inputs ; 20                          ;
-;         2 data inputs ; 189                         ;
+;         2 data inputs ; 193                         ;
 ;         3 data inputs ; 33                          ;
-;         4 data inputs ; 302                         ;
+;         4 data inputs ; 305                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 15.90                       ;
-; Average LUT depth     ; 8.87                        ;
+; Average LUT depth     ; 8.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -523,90 +525,95 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Sun Dec  1 23:25:33 2024
+    Info: Processing started: Mon Dec  2 15:47:31 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DesignProject2 -c DesignProject2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file designproject2.bdf
     Info (12023): Found entity 1: DesignProject2
 Info (12021): Found 1 design units, including 1 entities, in source file alarmcheck.sv
-    Info (12023): Found entity 1: AlarmCheck File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmCheck.sv Line: 1
+    Info (12023): Found entity 1: AlarmCheck File: C:/intelFPGA_lite/DesignProject2/AlarmCheck.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alarmtime.sv
-    Info (12023): Found entity 1: AlarmTime File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 1
+    Info (12023): Found entity 1: AlarmTime File: C:/intelFPGA_lite/DesignProject2/AlarmTime.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file parser.sv
-    Info (12023): Found entity 1: parser File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 1
+    Info (12023): Found entity 1: parser File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sevensegmentdriver.sv
-    Info (12023): Found entity 1: SevenSegmentDriver File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/SevenSegmentDriver.sv Line: 1
+    Info (12023): Found entity 1: SevenSegmentDriver File: C:/intelFPGA_lite/DesignProject2/SevenSegmentDriver.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux4.sv
-    Info (12023): Found entity 1: mux4 File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/mux4.sv Line: 1
+    Info (12023): Found entity 1: mux4 File: C:/intelFPGA_lite/DesignProject2/mux4.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clocktime.sv
-    Info (12023): Found entity 1: ClockTime File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv Line: 1
+    Info (12023): Found entity 1: ClockTime File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file directclockinputs.sv
-    Info (12023): Found entity 1: DirectClockInputs File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/DirectClockInputs.sv Line: 1
+    Info (12023): Found entity 1: DirectClockInputs File: C:/intelFPGA_lite/DesignProject2/DirectClockInputs.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ringer.sv
-    Info (12023): Found entity 1: ringer File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ringer.sv Line: 1
+    Info (12023): Found entity 1: ringer File: C:/intelFPGA_lite/DesignProject2/ringer.sv Line: 1
 Info (12127): Elaborating entity "DesignProject2" for the top level hierarchy
 Info (12128): Elaborating entity "ringer" for hierarchy "ringer:inst24"
-Warning (10230): Verilog HDL assignment warning at ringer.sv(22): truncated value with size 32 to match size of target (23) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ringer.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at ringer.sv(21): truncated value with size 32 to match size of target (23) File: C:/intelFPGA_lite/DesignProject2/ringer.sv Line: 21
 Info (12128): Elaborating entity "AlarmCheck" for hierarchy "AlarmCheck:inst19"
 Info (12128): Elaborating entity "AlarmTime" for hierarchy "AlarmTime:inst16"
-Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(21): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(24): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 24
-Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(27): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(34): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 34
-Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(39): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/AlarmTime.sv Line: 39
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(26): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/AlarmTime.sv Line: 26
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(29): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/AlarmTime.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(32): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/AlarmTime.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(39): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/AlarmTime.sv Line: 39
+Warning (10230): Verilog HDL assignment warning at AlarmTime.sv(44): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/AlarmTime.sv Line: 44
 Info (12128): Elaborating entity "DirectClockInputs" for hierarchy "DirectClockInputs:inst15"
 Info (12128): Elaborating entity "ClockTime" for hierarchy "ClockTime:inst14"
-Warning (10230): Verilog HDL assignment warning at ClockTime.sv(38): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv Line: 38
-Warning (10230): Verilog HDL assignment warning at ClockTime.sv(44): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at ClockTime.sv(49): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/ClockTime.sv Line: 49
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(48): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 48
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(49): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 49
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(50): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 50
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(56): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 56
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(59): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 59
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(70): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 70
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(74): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 74
+Warning (10230): Verilog HDL assignment warning at ClockTime.sv(79): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/ClockTime.sv Line: 79
 Info (12128): Elaborating entity "SevenSegmentDriver" for hierarchy "SevenSegmentDriver:inst10"
 Info (12128): Elaborating entity "parser" for hierarchy "parser:inst2"
-Warning (10230): Verilog HDL assignment warning at parser.sv(10): truncated value with size 32 to match size of target (8) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
-Warning (10230): Verilog HDL assignment warning at parser.sv(12): truncated value with size 32 to match size of target (4) File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
+Warning (10230): Verilog HDL assignment warning at parser.sv(10): truncated value with size 32 to match size of target (8) File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at parser.sv(12): truncated value with size 32 to match size of target (4) File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 12
 Info (12128): Elaborating entity "mux4" for hierarchy "mux4:inst1"
 Info (278001): Inferred 6 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst2|Mod0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst2|Div0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst3|Mod0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst3|Div0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst4|Mod0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst4|Div0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
-Info (12130): Elaborated megafunction instantiation "parser:inst2|lpm_divide:Mod0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
-Info (12133): Instantiated megafunction "parser:inst2|lpm_divide:Mod0" with the following parameter: File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst2|Mod0" File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst2|Div0" File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 10
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst3|Mod0" File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst3|Div0" File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 10
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst4|Mod0" File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "parser:inst4|Div0" File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 10
+Info (12130): Elaborated megafunction instantiation "parser:inst2|lpm_divide:Mod0" File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 12
+Info (12133): Instantiated megafunction "parser:inst2|lpm_divide:Mod0" with the following parameter: File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 12
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ckl.tdf
-    Info (12023): Found entity 1: lpm_divide_ckl File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/lpm_divide_ckl.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_ckl File: C:/intelFPGA_lite/DesignProject2/db/lpm_divide_ckl.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/sign_div_unsign_bkh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/intelFPGA_lite/DesignProject2/db/sign_div_unsign_bkh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0fe.tdf
-    Info (12023): Found entity 1: alt_u_div_0fe File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/alt_u_div_0fe.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_0fe File: C:/intelFPGA_lite/DesignProject2/db/alt_u_div_0fe.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
-    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/add_sub_t3c.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_t3c File: C:/intelFPGA_lite/DesignProject2/db/add_sub_t3c.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
-    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/add_sub_u3c.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "parser:inst2|lpm_divide:Div0" File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
-Info (12133): Instantiated megafunction "parser:inst2|lpm_divide:Div0" with the following parameter: File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/parser.sv Line: 10
+    Info (12023): Found entity 1: add_sub_u3c File: C:/intelFPGA_lite/DesignProject2/db/add_sub_u3c.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "parser:inst2|lpm_divide:Div0" File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 10
+Info (12133): Instantiated megafunction "parser:inst2|lpm_divide:Div0" with the following parameter: File: C:/intelFPGA_lite/DesignProject2/parser.sv Line: 10
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9sl.tdf
-    Info (12023): Found entity 1: lpm_divide_9sl File: C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/db/lpm_divide_9sl.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_9sl File: C:/intelFPGA_lite/DesignProject2/db/lpm_divide_9sl.tdf Line: 25
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 872 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 882 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 819 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Sun Dec  1 23:25:44 2024
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21061): Implemented 829 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Mon Dec  2 15:47:40 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:14
 
 

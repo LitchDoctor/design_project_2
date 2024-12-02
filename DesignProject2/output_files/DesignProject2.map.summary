@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Dec  1 23:25:43 2024
+Analysis & Synthesis Status : Successful - Mon Dec  2 15:47:40 2024
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : DesignProject2
 Top-level Entity Name : DesignProject2
 Family : MAX 10
-Total logic elements : 819
-    Total combinational functions : 819
-    Dedicated logic registers : 159
-Total registers : 159
+Total logic elements : 829
+    Total combinational functions : 826
+    Dedicated logic registers : 163
+Total registers : 163
 Total pins : 53
 Total virtual pins : 0
 Total memory bits : 0

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("C:/Users/ogw/OneDrive/Documents/ECE271 Designs/design_project_2/DesignProject2/output_files/") File("DesignProject2.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("C:/intelFPGA_lite/DesignProject2/output_files/") File("DesignProject2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -1,5 +1,5 @@
 Flow report for DesignProject2
-Sun Dec  1 23:26:08 2024
+Mon Dec  2 15:48:01 2024
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sun Dec  1 23:26:03 2024          ;
+; Flow Status                        ; Successful - Mon Dec  2 15:47:57 2024          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; DesignProject2                                 ;
 ; Top-level Entity Name              ; DesignProject2                                 ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 825 / 49,760 ( 2 % )                           ;
-;     Total combinational functions  ; 820 / 49,760 ( 2 % )                           ;
-;     Dedicated logic registers      ; 159 / 49,760 ( < 1 % )                         ;
-; Total registers                    ; 159                                            ;
+; Total logic elements               ; 838 / 49,760 ( 2 % )                           ;
+;     Total combinational functions  ; 827 / 49,760 ( 2 % )                           ;
+;     Dedicated logic registers      ; 163 / 49,760 ( < 1 % )                         ;
+; Total registers                    ; 163                                            ;
 ; Total pins                         ; 53 / 360 ( 15 % )                              ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                          ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/01/2024 23:25:33 ;
+; Start date & time ; 12/02/2024 15:47:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DesignProject2      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 168202123360412.173312433323464        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 176527413843741.173318325109476        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -93,11 +93,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4797 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:14     ; 1.2                     ; 5780 MB             ; 00:00:24                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4727 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.3                     ; 4865 MB             ; 00:00:04                           ;
-; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:56                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4807 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:12     ; 1.1                     ; 5690 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4743 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.3                     ; 4861 MB             ; 00:00:03                           ;
+; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,10 +106,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-EKD6G0E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-EKD6G0E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-EKD6G0E  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-EKD6G0E  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; eng-dear208-07   ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; eng-dear208-07   ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; eng-dear208-07   ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; eng-dear208-07   ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

@@ -1,0 +1,57 @@
+C:/intelFPGA_lite/DesignProject2/parser.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA_lite/DesignProject2/parser.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module parser
+
+Top level modules:
+	parser
+
+} {} {}} C:/intelFPGA_lite/DesignProject2/mux4.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA_lite/DesignProject2/mux4.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module mux4
+
+Top level modules:
+	mux4
+
+} {} {}} C:/intelFPGA_lite/DesignProject2/AlarmCheck.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA_lite/DesignProject2/AlarmCheck.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module AlarmCheck
+
+Top level modules:
+	AlarmCheck
+
+} {} {}} C:/intelFPGA_lite/DesignProject2/ringer.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA_lite/DesignProject2/ringer.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module ringer
+
+Top level modules:
+	ringer
+
+} {} {}} C:/intelFPGA_lite/DesignProject2/DesignProject2.v {1 {vlog -work work -stats=none C:/intelFPGA_lite/DesignProject2/DesignProject2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module DesignProject2
+
+Top level modules:
+	DesignProject2
+
+} {} {}} C:/intelFPGA_lite/DesignProject2/comparator.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA_lite/DesignProject2/comparator.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} C:/intelFPGA_lite/DesignProject2/counter.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA_lite/DesignProject2/counter.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/intelFPGA_lite/DesignProject2/SevenSegmentDriver.sv {1 {vlog -work work -sv -stats=none C:/intelFPGA_lite/DesignProject2/SevenSegmentDriver.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+-- Compiling module SevenSegmentDriver
+
+Top level modules:
+	SevenSegmentDriver
+
+} {} {}}

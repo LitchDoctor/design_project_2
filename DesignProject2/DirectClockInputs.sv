@@ -29,19 +29,19 @@ module DirectClockInputs(
         case (S)
             2'b00: begin
                 RC <= RESET;
-                IC <= INCREMENT;	
+                IC <= !INCREMENT;	
             end
             2'b01: begin
                 RA1 <= RESET;
-                IA1 <= INCREMENT;
+                IA1 <= !INCREMENT;
             end
             2'b10: begin
                 RA2 <= RESET;
-                IA2 <= INCREMENT;
+                IA2 <= !INCREMENT;
             end
             2'b11: begin
                 RA3 <= RESET;
-                IA3 <= INCREMENT;
+                IA3 <= !INCREMENT;
             end
         endcase
     end

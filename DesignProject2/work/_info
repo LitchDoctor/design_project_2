@@ -1,0 +1,279 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/21.1
+vAlarmCheck
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1733180876
+!i10b 1
+!s100 Q26T@KohNbBc8CjV0;lk93
+I@?6JRhf_09NHH38kDM6gU3
+S1
+Z2 dC:/intelFPGA_lite/DesignProject2
+Z3 w1733167989
+8C:/intelFPGA_lite/DesignProject2/AlarmCheck.sv
+FC:/intelFPGA_lite/DesignProject2/AlarmCheck.sv
+!i122 120
+L0 1 17
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OV;L;2021.1;73
+r1
+!s85 0
+31
+!s108 1733180875.000000
+!s107 C:/intelFPGA_lite/DesignProject2/AlarmCheck.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/AlarmCheck.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+n@alarm@check
+vAlarmTime
+R0
+R1
+!i10b 1
+!s100 =dY66?6PiGV4?Vh9RH3a]3
+IW[`b1QGA94]D:<A5ddAoV1
+S1
+R2
+w1733168367
+8C:/intelFPGA_lite/DesignProject2/AlarmTime.sv
+FC:/intelFPGA_lite/DesignProject2/AlarmTime.sv
+!i122 121
+L0 1 51
+R4
+R5
+r1
+!s85 0
+31
+Z8 !s108 1733180876.000000
+!s107 C:/intelFPGA_lite/DesignProject2/AlarmTime.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/AlarmTime.sv|
+!i113 1
+R6
+R7
+n@alarm@time
+vClockTime
+R0
+R1
+!i10b 1
+!s100 iM`nG;dL:2`b80LGA5o1^1
+I^b<gD1O]VoiBkGT0SW9R_3
+S1
+R2
+w1733180868
+8C:/intelFPGA_lite/DesignProject2/ClockTime.sv
+FC:/intelFPGA_lite/DesignProject2/ClockTime.sv
+!i122 122
+L0 1 43
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/ClockTime.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/ClockTime.sv|
+!i113 1
+R6
+R7
+n@clock@time
+vcomparator
+R0
+R1
+!i10b 1
+!s100 H2?o0RnlY`Zj>8hmTzL7B2
+IXaIE[7^h]h;cPLLY^nz?c3
+S1
+R2
+R3
+8C:/intelFPGA_lite/DesignProject2/comparator.sv
+FC:/intelFPGA_lite/DesignProject2/comparator.sv
+!i122 123
+L0 1 12
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/comparator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/comparator.sv|
+!i113 1
+R6
+R7
+vcounter
+R0
+R1
+!i10b 1
+!s100 Q9I?Wz6YB_WOONX7jel<31
+IOenQK<Xoglm9M1G?d[8R70
+S1
+R2
+R3
+8C:/intelFPGA_lite/DesignProject2/counter.sv
+FC:/intelFPGA_lite/DesignProject2/counter.sv
+!i122 124
+Z9 L0 1 10
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/counter.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/counter.sv|
+!i113 1
+R6
+R7
+vDesignProject2
+R1
+!i10b 1
+!s100 [P5cUZJ]QG^ZO5@?>?XGf3
+IBPDFT3j1PiD_IE_l0biBM0
+R2
+w1733179907
+8C:/intelFPGA_lite/DesignProject2/DesignProject2.v
+FC:/intelFPGA_lite/DesignProject2/DesignProject2.v
+!i122 125
+L0 20 250
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/DesignProject2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/DesignProject2/DesignProject2.v|
+!i113 1
+o-work work
+R7
+n@design@project2
+vDirectClockInputs
+R0
+R1
+!i10b 1
+!s100 c:ARJGH[Q0Ild3[XJNc4L3
+IZ>9ncoWMDE]iHOJOb[IS@1
+S1
+R2
+R3
+8C:/intelFPGA_lite/DesignProject2/DirectClockInputs.sv
+FC:/intelFPGA_lite/DesignProject2/DirectClockInputs.sv
+!i122 126
+L0 1 49
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/DirectClockInputs.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/DirectClockInputs.sv|
+!i113 1
+R6
+R7
+n@direct@clock@inputs
+vmux4
+R0
+R1
+!i10b 1
+!s100 ^WimJ1o:NN?F<50AZPoHN0
+IFQEMD7;z7NQHohUH_K4YK3
+S1
+R2
+Z10 w1733167991
+8C:/intelFPGA_lite/DesignProject2/mux4.sv
+FC:/intelFPGA_lite/DesignProject2/mux4.sv
+!i122 127
+R9
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/mux4.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/mux4.sv|
+!i113 1
+R6
+R7
+vparser
+R0
+R1
+!i10b 1
+!s100 ANiZ^K6^4=8b]0MjHdzYS2
+IUZ0:bNb7DEfEKijLhhblD3
+S1
+R2
+R10
+8C:/intelFPGA_lite/DesignProject2/parser.sv
+FC:/intelFPGA_lite/DesignProject2/parser.sv
+!i122 128
+L0 1 14
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/parser.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/parser.sv|
+!i113 1
+R6
+R7
+vringer
+R0
+R1
+!i10b 1
+!s100 UCLSZVI0oFRnJ08JeVKU<2
+IcmD49MaoQom4JWR]`Ah8j1
+S1
+R2
+R10
+8C:/intelFPGA_lite/DesignProject2/ringer.sv
+FC:/intelFPGA_lite/DesignProject2/ringer.sv
+!i122 129
+L0 1 29
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/ringer.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/ringer.sv|
+!i113 1
+R6
+R7
+vSevenSegmentDriver
+R0
+R1
+!i10b 1
+!s100 <2ME@M4`JRFAFZUJ>F0eE2
+IaZNEU7PGPYDA_6SdNBXeG0
+S1
+R2
+R3
+8C:/intelFPGA_lite/DesignProject2/SevenSegmentDriver.sv
+FC:/intelFPGA_lite/DesignProject2/SevenSegmentDriver.sv
+!i122 130
+L0 1 28
+R4
+R5
+r1
+!s85 0
+31
+R8
+!s107 C:/intelFPGA_lite/DesignProject2/SevenSegmentDriver.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/intelFPGA_lite/DesignProject2/SevenSegmentDriver.sv|
+!i113 1
+R6
+R7
+n@seven@segment@driver
