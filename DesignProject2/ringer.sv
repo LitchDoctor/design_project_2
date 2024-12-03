@@ -4,9 +4,9 @@ module ringer (
     output logic sound
 );
 
-    parameter TARGET_FREQ = 1000; //Target
+    parameter TARGET_FREQ = 5; //Target
 	 
-    localparam CLK_FREQ = 50000000; // CLK inpu frequenct
+    localparam CLK_FREQ = 5; // CLK inpu frequenct
 	 
     localparam TOGGLE_COUNT = CLK_FREQ / (2 * TARGET_FREQ); //
 
