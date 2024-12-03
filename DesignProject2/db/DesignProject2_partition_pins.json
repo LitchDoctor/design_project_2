@@ -184,18 +184,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "EnableA1",
-					"strict" : false
-				},
-				{
-					"name" : "EnableA3",
-					"strict" : false
-				},
-				{
-					"name" : "EnableA2",
-					"strict" : false
-				},
-				{
 					"name" : "CLK",
 					"strict" : false
 				},
@@ -205,6 +193,18 @@
 				},
 				{
 					"name" : "ORDER[0]",
+					"strict" : false
+				},
+				{
+					"name" : "EnableA1",
+					"strict" : false
+				},
+				{
+					"name" : "EnableA3",
+					"strict" : false
+				},
+				{
+					"name" : "EnableA2",
 					"strict" : false
 				},
 				{

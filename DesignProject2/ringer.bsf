@@ -46,8 +46,28 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 136 32)(pt 120 32)(line_width 1))
 	)
 	(parameter
-		"TARGET_FREQ"
-		"1000"
+		"TARGET_FREQ_A"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"TARGET_FREQ_B"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"TARGET_FREQ_C"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"SECONDS"
+		"5"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"CLK_FREQ"
+		"50000000"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
